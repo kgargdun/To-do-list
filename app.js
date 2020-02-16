@@ -184,7 +184,7 @@ app.get("/con", function(requst, response) {
 
 
 
-app.listen(3000 || process.env.PORT, function() {
+app.listen(process.env.PORT, function() {
   console.log("listening at port 3000");
 
 });
