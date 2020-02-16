@@ -1,3 +1,4 @@
+// https://frozen-plains-12834.herokuapp.com/ | https://git.heroku.com/frozen-plains-12834.git
 const express = require("express");
 const app = express();
 const request = require("request");
@@ -183,7 +184,7 @@ app.get("/con", function(requst, response) {
 
 
 
-app.listen(3000, function() {
+app.listen(3000 || process.env.PORT, function() {
   console.log("listening at port 3000");
 
 });
