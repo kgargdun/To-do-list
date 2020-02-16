@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
+mongoose.connect("mongodb+srv://admin-kaustubhgarg:3108fetcha%23@cluster0-aegjo.mongodb.net/todolistDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
